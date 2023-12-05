@@ -23,7 +23,7 @@ header.title-page h1 {
     margin: auto;
 }
 
-header.title-page i {
+#arrow-icon.fa-solid.fa-angle-down {
     color: #F7F7FF;
     font-size: 2rem;
     width: 1em;
@@ -153,3 +153,92 @@ footer {
 footer p {
     color: #F7F7FF;
 }
+
+.project-grid {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 769px) {
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1025px) {
+    .project-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.project-grid .project-card {
+    background-color: #F7F7FF;
+    border: 1px solid #031926;
+    border-radius: 5%;
+    overflow: hidden;
+}
+
+.project-grid .project-image {
+    overflow: hidden;
+}
+
+.project-grid .project-content {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
+}
+
+.project-grid .project-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.25em;
+}
+
+.project-grid .project-stack {
+    display: flex;
+    gap: 0.75em;
+    flex-wrap: wrap;
+}
+
+.project-grid .project-stack div {
+    background-color: #748CAB;
+    color: #F7F7FF;
+    font-size: 0.75em;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+}
+
+.project-grid .project-card h5 {
+    font-weight: 600;
+    font-size: 1.25em;
+    margin: 0;
+    color: #031926;
+    transition: color 0.3s ease;
+}
+
+.project-grid .project-card h5:hover {
+    color: #748CAB;
+}
+
+.project-card a {
+    text-decoration: none;
+    color: #031926;
+    transition: color 0.3s ease;
+}
+
+.project-card a:hover {
+    color: #748CAB;
+}
+
+#github.fa-brands.fa-github {
+    color: #031926;
+    font-size: 3rem;
+    transition: color 0.3s ease;
+}
+
+#github.fa-brands.fa-github:hover {
+    color: #748CAB;
+}
+
