@@ -1,0 +1,155 @@
+body, html {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F7F7FF;
+    color: #333;
+    overflow-x: hidden; 
+}
+
+.title-page {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #031926;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+header.title-page h1 {
+    text-align: center;
+    margin: auto;
+}
+
+header.title-page i {
+    color: #F7F7FF;
+    font-size: 2rem;
+    width: 1em;
+    margin-top: 80vh;
+    position: absolute;
+    cursor: pointer;
+    z-index: 4;
+}
+
+canvas {
+    position: absolute;
+    height: 100vh;
+}
+
+img {
+    padding-bottom: 10px;
+}
+.taskbar {
+    background-color: #031926;
+    color: #F7F7FF;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 100%;
+    z-index: 4;
+    font-size: 1.2em;
+}
+
+.taskbar a {
+    margin: 0 1.4rem;
+    text-decoration: none;
+    color: #F7F7FF;
+    font-weight: bold;
+}
+
+.title-page h1 {
+    font-size: 7em;
+}
+
+h1 {
+    color: #F7F7FF;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+h2 {
+    color: #031926;
+    font-size: 3em;
+}
+
+h3 {
+    color: #031926;
+    font-size: 1.5em;
+}
+
+h4 {
+    margin-top: 0;
+    color: #031926;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+h5 {
+    color: #031926;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+p {
+    color: #031926;
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+.goals-list li::marker {
+    font-size: 1.5em;
+    font-weight: 800;
+}
+
+#goals ol {
+    margin-top: 0;
+}
+
+nav {
+    position: relative;
+    color: #fff;
+    padding: 2em;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 0.5em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.content {
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+
+@media (min-width: 1025px) {
+    .container {
+        max-width: 976px;
+        margin: auto;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #031926;
+    color: #F7F7FF;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    color: #F7F7FF;
+}
