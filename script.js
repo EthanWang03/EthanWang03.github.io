@@ -110,3 +110,15 @@ function animate(){
 }
 
 animate();
+
+function toggleDescription(arrowIcon) {
+    const description = arrowIcon.parentElement.nextElementSibling;
+  
+    if (description.style.maxHeight) {
+      description.style.maxHeight = null;
+      arrowIcon.innerHTML = '<i class="fas fa-angle-down"></i>';
+    } else {
+      description.style.maxHeight = description.scrollHeight + 'px';
+      arrowIcon.innerHTML = '<i class="fas fa-angle-up"></i>';
+    }
+}
