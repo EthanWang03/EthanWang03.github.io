@@ -239,72 +239,65 @@ nav a {
     color: #748CAB;
 }
 
-/* Work Experience Section */
 .work-experience {
     margin-top: 1.5em;
   }
-  
-  /* Work Experience List */
-  .work-list {
+
+.work-list {
     list-style: none;
     padding: 0;
-  }
-  
-  /* Work Experience Card */
-  .work-card {
+}
+
+.work-card {
     margin-bottom: 1.5em;
     display: flex;
     align-items: center;
-  }
+}
 
-  .title-bar {
+.title-bar {
     width: 105%;
     background-color: #031926;
     margin-left: -2.5%;
     padding: 2.5%;
     position: relative;
     overflow: hidden;
-  }
+}
 
-  .work-arrow-icon {
+.work-arrow-icon {
     position: absolute;
     top: 40%;
     left: 90%;
     color: #fff;
     cursor: pointer;
     font-size: 2em;
-  }
-  
-  /* Work Experience Title */
-  .work-title {
+}
+
+.work-title {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 8px;
     color: #F7F7FF;
-  }
-  
-  /* Company Name */
-  .company-name {
+}
+
+.company-name {
     color: #555;
     margin-bottom: 8px;
     color: #F7F7FF;
-  }
-  
-  /* Work Experience Duration */
-  .work-duration {
+}
+
+.work-duration {
     color: #666;
     font-size: 1rem;
     color: #F7F7FF;
-  }
+}
   
-  /* Work Experience Description */
-  .work-description {
+.work-description {
     font-size: 1rem;
     line-height: 1.4;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
-  }
+}
   
 footer {
     text-align: center;
