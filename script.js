@@ -85,7 +85,9 @@ function randomColor(){
         
 var arrStars = [];
 
-for(i = 0; i < 200; i++){
+var numOfStar = (canvas.width * canvas.height) / 5000;
+
+for(i = 0; i < numOfStar; i++){
     var randX = Math.floor((Math.random()*C_WIDTH)+1);
     var randY = Math.floor((Math.random()*C_HEIGHT)+1);
     var randR = Math.random() * 1.7 + .5;

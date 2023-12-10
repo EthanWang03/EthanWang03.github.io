@@ -45,13 +45,23 @@ img {
 .taskbar {
     background-color: #031926;
     color: #F7F7FF;
-    padding: 1rem;
+    padding: 0;
     position: fixed;
     width: 100%;
     top: 100%;
     z-index: 4;
     font-size: 1.2em;
+    display: flex;
+    justify-content: space-around;
 }
+
+@media (max-width: 768px) {
+    .taskbar {
+        padding: 0.5rem;
+        font-size: 1em;
+    }
+}
+
 
 .taskbar a {
     margin: 0 1.4rem;
@@ -137,7 +147,7 @@ nav a:hover {
 }
 
 .content {
-    margin-top: 20vh;
+    margin-top: 10vh;
     margin-bottom: 20vh;
 }
 
@@ -160,7 +170,7 @@ nav a:hover {
     grid-template-columns: 1fr;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
     .project-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -181,8 +191,8 @@ nav a:hover {
 }
 
 .project-grid .project-card:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increased box shadow on hover */
-    transform: scale(1.02); /* Slightly scale the card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transform: scale(1.02);
 }
 
 .project-grid .project-image {
