@@ -57,11 +57,9 @@ img {
 
 @media (max-width: 768px) {
     .taskbar {
-        padding: 0.5rem;
-        font-size: 1em;
+        display: none;
     }
 }
-
 
 .taskbar a {
     margin: 0 1.4rem;
@@ -151,10 +149,18 @@ nav a:hover {
     margin-bottom: 20vh;
 }
 
+@media (max-width: 768px) {
+    .content {
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+}
+
 .container {
     display: flex;
     flex-direction: column;
     padding: 2em;
+    padding-bottom: 0;
 }
 
 @media (min-width: 1025px) {
@@ -372,9 +378,23 @@ footer p {
     font-size: 1.1em;
     text-align: right;
     display: flex;
-    align-items: center;
-    justify-content: center;
 }
+
+@media (max-width: 768px) {
+    .education-header {
+        display: flex;
+        flex-direction: column;
+    }
+    .education-major {
+        font-size: 1.3em;
+        padding-bottom: 5px;
+    }
+    .education-date {
+        font-size: 1.1em;
+        padding-bottom: 5px;
+    }
+}
+
 
 .university {
     font-size: 1.1em;
