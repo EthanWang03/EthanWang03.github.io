@@ -194,9 +194,15 @@ nav a:hover {
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
 }
 
 .project-grid .project-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transform: scale(1.02);
+}
+
+.project-grid .project-card:nth-child(0):hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     transform: scale(1.02);
 }
@@ -237,17 +243,10 @@ nav a:hover {
     font-size: 1.25em;
     margin: 0;
     color: #031926;
-    transition: color 0.3s ease;
-}
-
-.project-grid .project-card h5:hover {
-    color: #748CAB;
 }
 
 .project-card a {
     text-decoration: none;
-    color: #031926;
-    transition: color 0.3s ease;
 }
 
 .project-card a:hover {
@@ -334,19 +333,6 @@ nav a:hover {
     overflow: hidden;
     transition: max-height 0.3s ease;
 }
-  
-footer {
-    text-align: center;
-    padding: 1em;
-    background-color: #031926;
-    color: #F7F7FF;
-    width: 100%;
-    bottom: 0;
-}
-
-footer p {
-    color: #F7F7FF;
-}
 
 .education-item {
     padding-top: 1em;
@@ -401,7 +387,6 @@ footer p {
     }
 }
 
-
 .university {
     font-size: 1.1em;
     color: #031926;
@@ -411,4 +396,30 @@ footer p {
     padding: 0;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    background-color: #031926;
+    color: #F7F7FF;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    color: #F7F7FF;
+}
+
+footer a {
+    color: #F7F7FF;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+    padding-left: 5px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #748CAB;
+}
 

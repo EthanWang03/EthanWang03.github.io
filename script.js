@@ -122,3 +122,7 @@ function toggleDescription(arrowIcon) {
       arrowIcon.innerHTML = '<i class="fas fa-angle-up"></i>';
     }
 }
+
+function redirectToLink(link) {
+    window.location.href = link;
+}
