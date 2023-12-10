@@ -298,6 +298,12 @@ nav a:hover {
     font-size: 2em;
 }
 
+@media (max-width: 768px) {
+    .work-arrow-icon {
+        left: 85%;
+    }
+}
+
 .work-arrow-icon:hover {
     color: #748CAB;
 }
