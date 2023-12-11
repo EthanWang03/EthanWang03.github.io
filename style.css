@@ -178,7 +178,7 @@ nav a:hover {
 
 @media (min-width: 768px) {
     .project-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
@@ -198,11 +198,6 @@ nav a:hover {
 }
 
 .project-grid .project-card:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    transform: scale(1.02);
-}
-
-.project-grid .project-card:nth-child(0):hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     transform: scale(1.02);
 }
@@ -301,10 +296,6 @@ nav a:hover {
     .work-arrow-icon {
         left: 85%;
     }
-}
-
-.work-arrow-icon:hover {
-    color: #748CAB;
 }
 
 .work-title {
@@ -413,7 +404,8 @@ footer p {
 
 footer a {
     color: #F7F7FF;
-    font-size: 1.1rem;
+    font-size: 1.1em;
+    line-height: 1.6;
     transition: color 0.3s ease;
     padding-left: 5px;
     text-decoration: none;
