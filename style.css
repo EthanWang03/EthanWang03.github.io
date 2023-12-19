@@ -33,6 +33,11 @@ header.title-page h1 {
     z-index: 4;
 }
 
+
+#arrow-icon.fa-solid.fa-angle-down:hover {
+    color: #748CAB;
+}
+
 canvas {
     position: absolute;
     height: 100vh;
