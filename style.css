@@ -226,13 +226,15 @@ nav a:hover {
 
 .project-grid .project-stack {
     display: flex;
-    gap: 0.75em;
+    gap: 5px;
     flex-wrap: wrap;
 }
 
 .project-grid .project-stack div {
-    background-color: #748CAB;
-    color: #F7F7FF;
+    background: #F7F7FF;
+    color: #031926;
+    border: 1px solid #031926;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-size: 0.75em;
     padding: 0.5em 1em;
     border-radius: 0.5em;
@@ -286,6 +288,7 @@ nav a:hover {
     position: relative;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0.5, 0.3);
 }
 
 .work-arrow-icon {
@@ -420,3 +423,26 @@ footer a:hover {
     color: #748CAB;
 }
 
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skills-grid div {
+    background: #F7F7FF;
+    cursor: default;
+    display: inline-block;
+    color: #031926;
+    font-size: 1.5em;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.skills-grid div:hover {
+    background: #031926;
+    color: #F7F7FF;
+    transform: scale(1.05);
+}

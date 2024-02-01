@@ -2,7 +2,7 @@ function scrollToSection(sectionId) {
     const section = document.getElementById(sectionId);
 
     if (section) {
-        const offset = 120;
+        const offset = 50;
 
         const sectionTop = section.offsetTop - offset;
 
@@ -111,7 +111,7 @@ function animate(){
 
 animate();
 
-function toggleDescription(arrowIcon) {
+/*function toggleDescription(arrowIcon) {
     const description = arrowIcon.parentElement.nextElementSibling;
   
     if (description.style.maxHeight) {
@@ -121,7 +121,7 @@ function toggleDescription(arrowIcon) {
       description.style.maxHeight = description.scrollHeight + 'px';
       arrowIcon.innerHTML = '<i class="fas fa-angle-up"></i>';
     }
-}
+}*/
 
 function redirectToLink(link) {
     window.location.href = link;
