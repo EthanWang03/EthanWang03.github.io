@@ -277,18 +277,18 @@ nav a:hover {
 .work-card {
     margin-bottom: 1.5em;
     display: flex;
-    align-items: center;
+    align-items: center;   
 }
 
 .title-bar {
-    width: 100%;
+    width: 95%;
     background-color: #031926;
-    margin-left: -2.5%;
     padding: 2.5%;
+    border-radius: 0.5em;
     position: relative;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 4px 8px rgba(0, 0, 0.5, 0.3);
+    
 }
 
 .work-arrow-icon {
@@ -369,6 +369,7 @@ nav a:hover {
     font-size: 1.1em;
     text-align: right;
     display: flex;
+    padding-right: 10px;
 }
 
 @media (max-width: 768px) {
